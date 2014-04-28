@@ -27,7 +27,7 @@ public class BoardPiece {
 	public boolean isDoubleWord() { return this.type == Type.DOUBLE_WORD; }
 	public boolean isDoubleLetter() { return this.type == Type.DOUBLE_LETTER; }
 	public boolean isTripleWord() { return this.type == Type.TRIPLE_WORD; }
-	public boolean isTrippleLetter() { return this.type == Type.TRIPLE_LETTER; }
+	public boolean isTripleLetter() { return this.type == Type.TRIPLE_LETTER; }
 	
 	@Override
 	public String toString() {

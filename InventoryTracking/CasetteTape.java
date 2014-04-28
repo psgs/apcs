@@ -6,7 +6,7 @@ public class CasetteTape extends MusicMedia {
 	}
 
 	public String getMediaType() {
-		return "Casette";
+		return "Cassette";
 	}
 	
 	public String toString() {

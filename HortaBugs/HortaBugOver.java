@@ -25,7 +25,7 @@ public class HortaBugOver extends Critter {
             Rock rock = (Rock) potential;
             // We can't actually give it the rock because after
             // the .removeSelfFromGrid is called, the reference is null
-            // Instead we offer it the locatiom, and put a new rock
+            // Instead we offer it the location, and put a new rock
             // in its place instead.
             deque.offer(new AbstractMap.SimpleEntry<Location, Color>(to, potential.getColor()));
 

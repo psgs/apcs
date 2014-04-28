@@ -30,10 +30,10 @@ public class HortaUnder extends Critter {
     // Override this function to provide the Horta with rocks that it can move into
     @Override
     public ArrayList<Location> getMoveLocations() {
-        ArrayList<Location> locs = new ArrayList<Location>();
-        locs.addAll(this.getGrid().getEmptyAdjacentLocations(this.getLocation()));
-        locs.addAll(this.getGrid().getOccupiedAdjacentLocations(this.getLocation()));
-        return locs;
+        ArrayList<Location> locations = new ArrayList<Location>();
+        locations.addAll(this.getGrid().getEmptyAdjacentLocations(this.getLocation()));
+        locations.addAll(this.getGrid().getOccupiedAdjacentLocations(this.getLocation()));
+        return locations;
     }
 
 }

@@ -50,8 +50,8 @@ public class MyFileReader {
 			}
 
 			in.close();
-		} catch (IOException e) {
-			e.printStackTrace();
+		} catch (IOException ex) {
+			ex.printStackTrace();
 		}
 	}
 

@@ -25,7 +25,7 @@ public class mainThing {
 			else if (choice == 0) {
 				System.out.println("Please enter a numerator...");
 				int n = scan.nextInt();
-				System.out.println("Please enter a denomenator...");
+				System.out.println("Please enter a denominator...");
 				int d = scan.nextInt();
 
 				f1.setNumerator(n);
@@ -35,7 +35,7 @@ public class mainThing {
 			else if (choice == 1) {
 				System.out.println("Please enter a numerator...");
 				int n = scan.nextInt();
-				System.out.println("Please enter a denomenator...");
+				System.out.println("Please enter a denominator...");
 				int d = scan.nextInt();
 
 				Fraction f2 = new Fraction(n, d);
@@ -48,7 +48,7 @@ public class mainThing {
 			else if (choice == 2) {
 				System.out.println("Please enter a numerator...");
 				int n = scan.nextInt();
-				System.out.println("Please enter a denomenator...");
+				System.out.println("Please enter a denominator...");
 				int d = scan.nextInt();
 
 				Fraction f2 = new Fraction(n, d);
@@ -61,7 +61,7 @@ public class mainThing {
 			else if (choice == 3) {
 				System.out.println("Please enter a numerator...");
 				int n = scan.nextInt();
-				System.out.println("Please enter a denomenator...");
+				System.out.println("Please enter a denominator...");
 				int d = scan.nextInt();
 
 				Fraction f2 = new Fraction(n, d);
@@ -74,7 +74,7 @@ public class mainThing {
 			else if (choice == 4) {
 				System.out.println("Please enter a numerator...");
 				int n = scan.nextInt();
-				System.out.println("Please enter a denomenator...");
+				System.out.println("Please enter a denominator...");
 				int d = scan.nextInt();
 
 				Fraction f2 = new Fraction(n, d);
@@ -87,7 +87,7 @@ public class mainThing {
 			else if (choice == 5) {
 				System.out.println("Please enter a numerator...");
 				int n = scan.nextInt();
-				System.out.println("Please enter a denomenator...");
+				System.out.println("Please enter a denominator...");
 				int d = scan.nextInt();
 
 				Fraction f2 = new Fraction(n, d);

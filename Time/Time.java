@@ -31,7 +31,7 @@ public class Time {
 		return this.hrs == t.hrs && this.mins == t.mins && this.secs == t.secs;
 	}
 
-	// Returns the String equivelant of this Time object.
+	// Returns the String equivalent of this Time object.
 	public String toString() {
 		return this.hrs + ":" + (this.mins >= 10 ? this.mins : "0" + this.mins)
 				+ ":" + (this.secs >= 10 ? this.secs : "0" + this.secs);

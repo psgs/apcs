@@ -22,7 +22,7 @@ public class Scrabble {
 		try {
 			file = new File("./ACSL.dat");
 			reader = new BufferedReader(new FileReader(file));
-		} catch (IOException e) {
+		} catch (IOException ex) {
 			System.err.println("Unable to read from file, aborting!");
 			System.exit(-1);
 		}
@@ -73,13 +73,13 @@ public class Scrabble {
 					if(piece.isTripleWord()) mult *= 3;
 					
 					if(piece.isDoubleLetter()) score += (ScrabbleBoard.getCharValue(word.charAt(i)) * 2);
-					else if(piece.isTrippleLetter()) score += (ScrabbleBoard.getCharValue(word.charAt(i)) * 3);
+					else if(piece.isTripleLetter()) score += (ScrabbleBoard.getCharValue(word.charAt(i)) * 3);
 					else score += (ScrabbleBoard.getCharValue(word.charAt(i)) * 1);
 				}
 				
 				score *= mult;
 				
-				if (DEBUG) System.out.println("Score: " + score + " mult: " + mult + "\n");
+				if (DEBUG) System.out.println("Score: " + score + " Mult: " + mult + "\n");
 				
 				piecesInRange.put(pieces, score);
 			}

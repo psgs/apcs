@@ -15,8 +15,8 @@ public class WhatIs {
 
         try {
             reader = new BufferedReader(new FileReader(file));
-        } catch (FileNotFoundException e) {
-            System.err.println("The requested file does not exist, please create it and try again..!");
+        } catch (FileNotFoundException ex) {
+            System.err.println("The requested file does not exist, please create it and try again!");
             System.exit(-1);
         }
 
@@ -27,21 +27,21 @@ public class WhatIs {
 
                 String[] line = reader.readLine().split(",");
 
-                for(String s : line) {
+                for(String string : line) {
                     try {
-                        totalSum += Integer.parseInt(s);
-                    } catch (NumberFormatException e) {
-                         tokens.add(s);
+                        totalSum += Integer.parseInt(string);
+                    } catch (NumberFormatException ex) {
+                         tokens.add(string);
                     }
                 }
-            } catch (IOException e) {
-                System.err.println("There was an error parsing the file, aborting..!");
+            } catch (IOException ex) {
+                System.err.println("There was an error parsing the file, aborting!");
                 System.exit(-1);
             }
         }
 
-        for(String s : tokens) {
-            System.out.println(s);
+        for(String string : tokens) {
+            System.out.println(string);
         }
 
         System.out.println(totalSum);
